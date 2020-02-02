@@ -1,9 +1,4 @@
 body {
-  /* background: #FFE4B5; */
-  /* background-image: url("unsplash_books.jpg");
-  background-position: right; 
-  background-repeat: no-repeat;
-  background-size: cover;  */
   margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,11 +30,20 @@ h4 {
 .book-box {
   border: solid 0.5px;
   margin-bottom: 3vh;
+  overflow-wrap: break-word;
   padding: 12px;
   padding-top: 3px;
-  width: 50%;
+  width: 70%;
+  word-wrap: break-word;
 }
 
 .highlight {
   font-weight: bold;
+}
+
+/* Media queries */
+@media(min-width: 968px) {
+.book-box {
+  width: 50%;
+}
 }

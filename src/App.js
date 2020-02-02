@@ -14,9 +14,9 @@ export const App = () => {
 
   return (
     <div className="main-container">
-      <h1>Top 20 Books <span role="img" aria-label="books">📚</span></h1>
+      <h1>Top 30 Books <span role="img" aria-label="books">📚</span></h1>
       <section className="books-list">
-        {books.slice(0,20).map((book, index) => (
+        {books.slice(0,30).map((book, index) => (
           <div 
             className="book-box"
             key={book.bookID}
