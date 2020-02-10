@@ -4,7 +4,7 @@ export const App = () => {
   const [books, setBooks] = useState([])
 
   useEffect(() => {
-    fetch("https://michel-book-api.herokuapp.com/books/sort/rating")
+    fetch("https://michel-project-mongo.herokuapp.com/books")
       .then(res => res.json())
       .then(json => {
         setBooks(json)
